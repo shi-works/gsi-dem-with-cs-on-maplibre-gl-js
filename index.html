@@ -73,12 +73,12 @@
             container: 'map',
             style: 'std.json',
             // style: 'https://tile2.openstreetmap.jp/styles/osm-bright/style.json',
-            zoom: 10,
+            zoom: 6.7,
             minZoom: 1,
             maxZoom: 23,
-            pitch: 60,
+            pitch: 0,
             bearing: 0,
-            center: [138.0731, 36.1531],
+            center: [135.709, 35.131],
             hash: true,
             attributionControl: false
         });
@@ -108,7 +108,7 @@
         // Attributionを折りたたみ表示
         map.addControl(new maplibregl.AttributionControl({
             compact: true,
-            customAttribution: '（<a href="https://twitter.com/shi__works" target="_blank">Twitter</a> | <a href="https://github.com/shi-works/aist-dem-with-cs-on-maplibre-gl-js" target="_blank">Github</a>） '
+            customAttribution: '（<a href="https://twitter.com/shi__works" target="_blank">Twitter</a> | <a href="https://github.com/shi-works/gsi-dem-with-cs-on-maplibre-gl-js" target="_blank">Github</a>） '
         }));
 
         // 3D地形コントロール
