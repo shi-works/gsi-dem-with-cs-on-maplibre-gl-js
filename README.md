@@ -8,9 +8,9 @@ https://shi-works.github.io/gsi-dem-with-cs-on-maplibre-gl-js/
 https://www2.ffpri.go.jp/soilmap/data-src.html
 ### 長野県、兵庫県、高知県、栃木県
 #### G空間情報センター
-https://www.geospatial.jp/ckan/dataset/nagano-csmap
-https://www.geospatial.jp/ckan/dataset/csmap_hyogo
-https://www.geospatial.jp/ckan/dataset/csmap_kochi
-https://www.geospatial.jp/ckan/dataset/csmap_tochigi
+https://www.geospatial.jp/ckan/dataset/nagano-csmap  
+https://www.geospatial.jp/ckan/dataset/csmap_hyogo  
+https://www.geospatial.jp/ckan/dataset/csmap_kochi  
+https://www.geospatial.jp/ckan/dataset/csmap_tochigi  
 
 
