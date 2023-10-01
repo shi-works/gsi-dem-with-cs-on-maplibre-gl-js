@@ -12,5 +12,8 @@ https://www.geospatial.jp/ckan/dataset/nagano-csmap
 https://www.geospatial.jp/ckan/dataset/csmap_hyogo  
 https://www.geospatial.jp/ckan/dataset/csmap_kochi  
 https://www.geospatial.jp/ckan/dataset/csmap_tochigi  
+### 岐阜県、静岡県
+#### open-hinata
+https://kenzkenz.xsrv.jp/open-hinata/open-hinata.html
 
 
