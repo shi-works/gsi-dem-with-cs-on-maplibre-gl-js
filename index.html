@@ -221,6 +221,54 @@
                 },
             });
 
+            // 岐阜県CS立体図ソース
+            // タイル配信元【open-hinata】https://kenzkenz.xsrv.jp/open-hinata/open-hinata.html
+            map.addSource("gifu-cs", {
+                type: 'raster',
+                tiles: [
+                    'https://kenzkenz2.xsrv.jp/gihucs/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://www.geospatial.jp/ckan/dataset/cs-2022-geotiff" target="_blank">岐阜県CS立体図</a>',
+                tileSize: 256,
+                scheme: "tms"
+            });
+
+            // 岐阜県CS立体図レイヤ
+            map.addLayer({
+                id: "gifu-cs",
+                type: "raster",
+                source: "gifu-cs",
+                minzoom: 0,
+                maxzoom: 18,
+                paint: {
+                    'raster-opacity': 1.0
+                },
+            });
+
+            // 静岡県CS立体図ソース
+            // タイル配信元【open-hinata】https://kenzkenz.xsrv.jp/open-hinata/open-hinata.html
+            map.addSource("shizuoka-cs", {
+                type: 'raster',
+                tiles: [
+                    'https://mtile.pref.miyazaki.lg.jp/tile/cssizuoka/{z}/{x}/{y}.png',
+                ],
+                attribution: '<a href="https://www.geospatial.jp/ckan/dataset/shizuokakencsmap2" target="_blank">静岡県CS立体図</a>',
+                tileSize: 256,
+                scheme: "tms"
+            });
+
+            // 静岡県CS立体図レイヤ
+            map.addLayer({
+                id: "shizuoka-cs",
+                type: "raster",
+                source: "shizuoka-cs",
+                minzoom: 0,
+                maxzoom: 18,
+                paint: {
+                    'raster-opacity': 1.0
+                },
+            });
+
             ///// 【出典】森林総合研究所 森林土壌デジタルマップ /////
             // 広島県CS立体図ソース
             map.addSource("hiroshima-cs", {
@@ -378,6 +426,16 @@
                 );
                 map.setPaintProperty(
                     'hyogo-cs',
+                    'raster-opacity',
+                    parseInt(e.target.value, 10) / 100
+                );
+                map.setPaintProperty(
+                    'gifu-cs',
+                    'raster-opacity',
+                    parseInt(e.target.value, 10) / 100
+                );
+                map.setPaintProperty(
+                    'shizuoka-cs',
                     'raster-opacity',
                     parseInt(e.target.value, 10) / 100
                 );
